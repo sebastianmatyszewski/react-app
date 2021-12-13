@@ -50,16 +50,16 @@ class App extends Component {
               <div className="quote">
               {this.state.quote.quote}
               </div>
-              
               <div className="author">
                 -{this.state.quote.author}
               </div>
             </div>
-            <div className="buttons-container">
+            
+          </div>
+          <div className="buttons-container">
               <button onClick={this.getPreviousQuote} disabled={this.state.previousQuote.length===0}>Previous quote</button>
               <button onClick={this.getQuote}>Generate next quote</button>
             </div>
-          </div>
       </div>
     );
   }
